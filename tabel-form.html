@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Tabel</h1>
+
+    <table style="background-color: white;" border="1">
+        <tr style="background-color: lightblue;">
+            <th rowspan="2" width="5px">
+                No
+            </th>
+            <th rowspan="2">NPM</th>
+            <th rowspan="2" width="300px">
+                Nama
+            </th>
+            <th colspan="2">
+                Nilai
+            </th>
+        </tr>
+
+        <tr style="background-color: lightblue;">
+            <th>UTS</th>
+            <th>UAS</th>
+        </tr>
+
+
+        <tr>
+            <td>
+                1.
+            </td>
+            <td>
+                06.100,001
+            </td>
+            <td>
+                Amin A. Angkasa
+            </td>
+
+
+            <td>
+                70
+            </td>
+            <td>
+                80
+            </td>
+
+
+        <tr>
+            <td>
+                2.
+            </td>
+            <td>
+                06.100.002
+            </td>
+            <td>
+                Beni B. Bernardi
+            </td>
+
+            <td>
+                70
+            </td>
+            <td>
+                80
+            </td>
+        </tr>
+
+        </tr>
+    </table>
+
+
+    <h1>
+        Form
+    </h1>
+
+    <form action="latihanTable.html" method="post" class="form-container">
+        <div class="main-form">
+            <h3><span style="color: rgb(0, 160, 0);">Registration Form</span></h3>
+
+            <label for="First Name" class="label">
+                First Name :
+            </label> <br>
+
+            <input type="text" name="first-name" class="form-input"><br>
+
+            <label for="Last Name">
+                Last Name :
+            </label> <br>
+            <input type="text" name="last-name" class="form-input"> <br>
+
+            <label for="Email">
+                Email :
+            </label> <br>
+            <input type="email" name="email" class="form-input"><br>
+
+            <label for="Password">
+                Password :
+            </label> <br>
+            <input type="password" name="password" class="form-input"><br>
+
+            <label for="Re-type Password">
+                Re-type Password :
+            </label> <br>
+            <input type="password" name="retype-password" class="form-input"><br>
+
+            <label for="contact">
+                Contact :
+            </label><br>
+            <input type="text" name="contact" class="form-input"><br>
+
+            <label for="Gender">Gender:</label> <br>
+            <select name="gender" id="Gender: " class="gender-select">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select> <br>
+
+
+            <input type="submit" value="Submit" class="submit-button">
+        </div>
+
+    </form>
+</body>
+
+</html>
